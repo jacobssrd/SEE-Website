@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socially Engaged Engineers</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  	<meta charset="utf-8">
+		
+	<meta name="description" content="">
+	
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<div class="wrapper cf">
+	
+	
+		<header class="cf">
+
+			<!-- nav -->
+			<nav class="cf">
+				<ul id="nav-left" class="sf-menu nav">
+					<li class="current-menu-item"><a href="/"><span>HOME</span></a></li>
+					<li><a href="/videos"><span>VIDEOS</span></a></li>
+					<li><a href="/getinvolved"><span>GET INVOLVED!</span></a></li>
+				</ul>
+				<div id="logo" class="cf"><%= image_tag "see_imgs/see_logo.png" %></div>
+				<ul id="nav-right" class="sf-menu nav">
+					<li><a href="/aboutus"><span>ABOUT SEE</span></a></li>
+					<li><a href="/team"><span>TEAM</span></a></li>
+					<li><a href="/contact"><span>CONTACT</span></a></li>	
+				</ul>			
+
+				<div id="combo-holder"></div>
+			</nav>
+			<!-- ends nav -->
+			
+	
+		</header>
+
+		<!-- MAIN -->
+		<div role="main" id="main" class="cf">
+
+			<!-- CONTENT OF PAGE -->
+			<%= yield %>
+
+		</div>
+
+		
+		<footer>
+			<!-- bottom -->
+			<div id="bottom">
+								<!-- social-bar -->
+				<div id="social-bar-holder">
+					<ul id="social-bar" class="cf">
+						
+						<li class="facebook"><a href="https://www.facebook.com/sociallyengagedengineers"  title="Facebook" ></a></li>
+						<li class="youtube"><a href="https://www.youtube.com/"  title="YouTube" ></a></li>
+						<li class="twitter"><a href="https://twitter.com/SEEngineering"  title="Twitter" ></a></li>
+					</ul>
+				</div>
+				<div class="cf"></div>
+				<!-- ENDS social-bar -->
+			</div>
+			<!-- ENDS bottom -->
+			
+		</footer>
+		
+		
+	</div>
+
+</body>
+</html>
