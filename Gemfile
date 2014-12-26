@@ -38,7 +38,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
+group :production do
+  gem 'rails_12factor'
+end
 
 
 group :assets do
@@ -46,7 +48,6 @@ group :assets do
   gem 'commonjs'
 end
 
-gem 'rails_12factor', group: :production
 
 ruby "2.1.5"
 
